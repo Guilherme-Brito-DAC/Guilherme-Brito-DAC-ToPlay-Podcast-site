@@ -1,0 +1,467 @@
+body{
+  background-color: #18191c;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: #25282b; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #0d0e0f; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d0e0f; 
+  border:1px solid #242424
+}
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  #link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #c9c9c9;
+    display: block;
+    transition: 0.5s;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  .active{
+    border-left: 3px solid #1982c4;
+  }
+  .perfil{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
+}
+  .perfilimg{
+      border-radius: 50%;
+      width: 7rem;
+      height: 7rem;
+      cursor: pointer;
+      transition: 0.25s;
+      margin-bottom: 1rem;
+  }
+  .perfilimg:hover{
+      transform: scale(1.05);
+  }
+  .perfil p{
+      font-size: 1.3rem;
+      letter-spacing: 0.1rem;
+  }
+  #link:hover {
+    color: #f1f1f1;
+    border-left: 3px solid #1982c4;
+    background-color: #2b2b2b;
+  }
+  #hr{
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-left: 30px;
+    letter-spacing: 0.2rem;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+  }  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  #gear:hover{
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+  #ex1{
+      background-color: #18191c;
+      font-size: 1rem;
+  }
+  .info{
+      bottom: 0;
+      background:#111;
+      height: 10rem;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+  }
+  .search{
+    display:flex;
+    justify-content: center;
+}
+.search input{
+    background:#25282b;
+    border:0;
+    padding: 0.5rem;
+    width: 30rem;
+    font-size: 1rem;
+    color:white;
+    border: 1px solid #18191c;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1.5px solid #212226;
+}
+.search input:focus{
+    outline: none;
+    border: 1.5px solid #1982c4;
+}
+.search button{
+    background-color: #40424a;
+    border: 0;
+    width: 5rem;
+    margin-left: -0.2rem;
+    padding: 0.7rem;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.mid{
+  position: relative;
+  margin-left: 300px;
+  display:flex;
+  justify-content: center;
+}
+.list{
+    display:flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.popular{
+    width:20rem;
+    height: 20rem;
+    background-color: #1982c4;
+    border-radius: 24px;
+    margin-top: 2rem;
+    margin-bottom: 6.5rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+.popular img{
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.popular p{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+.pagination {
+  display: inline-block;
+  justify-content: center;
+}
+.pagination div{
+  padding: 0.5rem;
+  border-radius: 24px;
+}
+.pagination a {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  transition: 0.25s;
+}
+.pagination a:hover{
+  color:black;
+  background-color: white;
+}
+.hoverimg{
+  position: absolute;
+  background-color: black;
+  border-radius: 24px;
+  width:20rem;
+  height: 20rem;
+  margin-top: -20rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.25s;
+  justify-content: center;
+}
+.hoverimg:hover{
+  opacity: 0.7;
+}
+.hoverimg img{
+  width: 5rem;
+  height: 5rem;
+  margin-top: 8rem;
+  transition: 0.25s;
+}
+.hoverimg img:hover{
+  transform: scale(1.05);
+  opacity: 1;
+}
+.desc{
+  width: 30rem;
+
+}
+.desc img{
+  width: 30rem;
+  border-radius: 24px;
+}
+#name{
+  margin-top: 1rem;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+#description{
+  font-size:1rem;
+  opacity: 0.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
+#totalepisodes{
+  background: -webkit-linear-gradient(#1982c4, #1ec07a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-weight:600;
+  text-transform: uppercase;
+}
+.container{
+  display:flex;
+  margin-top: 5rem;
+}
+.content{
+  margin-left: 5rem;
+  width: 50%;
+}
+.content input{
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border-radius: 24px;
+  border: 0;
+  outline: none;
+  width: 20rem;
+  background:#25282b;
+  color:white;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 2rem;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  display: block;
+  height: 30rem;
+  overflow-y: auto;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+  background-color: #25282b;
+  border: 1px solid white;
+}
+.thumb{
+  width:9rem;
+  opacity: 1;
+}
+td img{
+  opacity: 0.5;
+  transition: 0.25s;
+  cursor: pointer;
+}
+td img:hover{
+  opacity: 1;
+}
+.container-audio {
+  width: 100%;
+  padding: 20px;
+  background-color: #0d0e0f;
+  color: #444;
+  position: fixed;
+  bottom: 0;
+}
+audio {
+width:100%;
+filter:invert(100%);
+}
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+  margin: 0;
+}
+audio::-webkit-media-controls-panel {
+  background: #dad7d4;
+  border: 0;
+  outline:none;
+}
+audio::-webkit-media-controls-play-button{
+  cursor: pointer;
+  opacity: 1;
+}
+audio::-webkit-media-controls-mute-button{
+  cursor: pointer;
+}
+.logo{
+  position: fixed;
+  right: 0;
+  top:0;
+}
+.logo img{
+  width: 8rem;
+  height: 8rem;
+}
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.file-input{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.file-input label {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right,#1982c4 , #1ec07a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+}
+.file-input label:hover{
+  transform: scale(1.05);
+} 
+input[type=image]{
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+}
+.chose{
+  width: 100%;
+  background-color: #2b2b2b;
+  outline: none;
+  color:white;
+  padding: 0.5rem;
+  border-radius: 24px;
+  border:0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#ex1 button{
+  border:0;
+  outline: none;
+  padding: 0.8rem;
+  border-radius: 24px;
+  width: 7rem;
+  color:white;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+#ex1 button a{
+  color:White;
+  text-transform: none;
+  text-decoration: none;
+}
+.nowplaying{
+  position: fixed;
+  background-color: #2b2b2b;
+  width: 12rem;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  float:left;
+  text-align: center;
+  transition: 0.5s;
+  transform:translateX(-130%);
+}
+.nowplaying:hover{
+  cursor: pointer;
+  width: 13rem;
+}
+.nowplaying img{
+  margin:1rem;
+  margin-right: 1rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 30px;
+}
+
+.box1{
+  display:flex;
+  overflow-x: auto;
+  height: 25rem;
+  width: 90%;
+  position: absolute;
+}
+.popular1{
+  margin-top: 3.5rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: #1982c4;
+  border-radius: 24px;
+  text-align: center;
+  margin-right: 1rem;
+}
+.popular1 img{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 24px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.popular1 p{
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+.hoverimg1{
+  position: absolute;
+  background-color: black;
+  border-radius: 24px;
+  width:15rem;
+  height: 15rem;
+  margin-top: -15rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.25s;
+  justify-content: center;
+}
+.hoverimg1:hover{
+  opacity: 0.7;
+}
+.hoverimg1 img{
+  width: 4rem;
+  height: 4rem;
+  margin-top: 5rem;
+  transition: 0.25s;
+}
+.hoverimg1 img:hover{
+  transform: scale(1.05);
+  opacity: 1;
+}
